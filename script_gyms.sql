@@ -30,7 +30,7 @@ Medida_Biceps float not null,
 Medida_Torso float not null,
 Medida_Muslos float not null,
 Medida_Gemelos float not null,
-Imc float
+Imc float GENERATED ALWAYS AS (((Estatura ^ 2 / Peso ))) STORED
 );
 -- nueva tabla
 
@@ -49,4 +49,3 @@ foreign key (Id_Rutina) references Rutina(Id_Rutina),
 foreign key (Id_Objetivo_Entrenamiento) references Objetivo_Entrenamiento(Id_Objetivo_Entrenamiento),
 foreign key (Id_Medidas_Corporales) references Medidas_Corporales(Id_Medidas_Corporales)
 );
-
