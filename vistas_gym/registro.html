@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>registro</title>
+</head>
+<body>
+    <section class="page-section" id="contact">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Inscribe un nuevo Gymrat!</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Al inscribirte te comprometes a ser la mejor version de ti mismo</p>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Nombre del usuario" data-sb-validations="required" />
+                            <label for="name">Nombre del usuario</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Email</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">telefono</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="cedula" type="text" data-sb-validations="required"/>
+                            <label for="cedula">Cedula</label>
+                            <div class="invalid-feedback" data-sb-feedback="cedula:required"> se requiere la cedula del usuario</div>
+                        </div>
+                        <div class="form-floating mb-3"></div>
+                        <label for="inscripcion">Fecha inscripcion</label>
+                            <input class="form-control" id="inscripcion" type="date" data-sb-validations="required"/>
+
+                            <div class="invalid-feedback" data-sb-feedback="inscripcion:required"> se requiere lafecha de inscripcion del usuario</div>
+                        </div>
+                       
+                        <div class="form-floating mb-3"></div>
+                        <label for="tipo-plan">Tipo plan</label>
+                            <select name="plan" id="plan" data-sb-validations="required">
+                                <option value="">Bajar de peso</option>
+                                <option value="">Subir de peso</option>
+                                <option value="">Aumentar masa muscular</option>
+                                <option value="">Quemar grasa</option>                                           
+                            </select> 
+                            <div class="invalid-feedback" data-sb-feedback="plan:required">Es necesario elegir un plan de entrenamiento</divclass>></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Nuevo Gymrat</button>
+                        <br> <br>
+                        <a class="btn btn-primary btn-xl" href="index.html">Cancelar</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
